@@ -9,8 +9,7 @@ import java.lang.reflect.Constructor;
  */
 public class ReflectionSingletonTest {
     public static void main(String[] args) {
-        EagerInitializedSingleton instanceOne =
-                EagerInitializedSingleton.getInstance();
+        EagerInitializedSingleton instanceOne =  EagerInitializedSingleton.getInstance();
         EagerInitializedSingleton instanceTwo = null;
         try {
             Constructor[] constructors =
@@ -25,7 +24,7 @@ public class ReflectionSingletonTest {
         } catch (Exception e) {
             e.printStackTrace();
         }
-        System.out.println(instanceOne.hashCode());
-        System.out.println(instanceTwo.hashCode());
+        System.out.println("instanceOne "+instanceOne.hashCode());
+        System.out.println("instanceTwo "+instanceTwo.hashCode());
     }
 }

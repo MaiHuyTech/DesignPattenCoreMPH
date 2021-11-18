@@ -3,6 +3,7 @@ package CreationalPattern.Singleton.Entity;
 /**
  * @author MPHuy on 18/11/2021
  */
+// goi lai class chua object
 public class BillPughSingleton {
     private BillPughSingleton(){}
 

@@ -35,6 +35,5 @@ public class SingletonSerializedTest {
 
         System.out.println("instanceOnehashCode="+instanceOne.hashCode());
         System.out.println("instanceTwohashCode="+instanceTwo.hashCode());
-
     }
 }
